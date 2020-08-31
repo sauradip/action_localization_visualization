@@ -1,1 +1,1 @@
-# action_localization_visualization
+# Temporal Action Localization Visualization Tool
