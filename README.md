@@ -8,10 +8,10 @@ TALVT is a HTML and Javascript based Web application.
 
 Features include:
 
-The ability to visualize temporal segments of a particular Action Instance in the video
-Has support upto 20 class Instance 
-Can visualize both Supervised and Weakly Supervised Model Output
-Includes code to convert output of two standard codes in Temporal Action Localization into visualizable format.
+1) The ability to visualize temporal segments of a particular Action Instance in the video
+2) Has support upto 20 class Instance 
+3) Can visualize both Supervised and Weakly Supervised Model Output
+4) Includes code to convert output of two standard codes in Temporal Action Localization into visualizable format.
 
 
-VoTT helps facilitate an end-to-end machine learning pipeline:
+TALVT helps facilitate an end-to-end machine learning pipeline:
