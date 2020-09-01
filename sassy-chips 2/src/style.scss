@@ -1,0 +1,54 @@
+$chip-status: (
+  primary: #dedede,
+  secondary: #4a4a4a,
+  alternative: #c6c6c6,
+  alert: #fff6bf,
+  danger: #dcaa26,
+  warning: #d74c2b,
+  success: #45c550
+);
+
+.chips {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #c1c1c1;
+  border-radius: 6px;
+  padding: 15px 30px;
+}
+
+.chip {
+  border-radius: .75em;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1em;
+  padding: .25em .75em;
+}
+
+
+@function checkColorValue( $color ) {
+  // Get RGB values of color
+  $redValue: red( $color );
+  $greenValue: green( $color );
+  $blueValue: blue( $color );
+
+  // Compute the perceptive luminance, keeping
+  // in mind that the human eye favors green.
+  $l: 1 - ( 0.299 * $redValue + 0.587 * $greenValue + 0.114 * $blueValue ) / 255;
+  @if ($l < 0.4) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+
+// loop through $chip-status map and create necessary color modifiers
+@each $status, $bgcolor in $chip-status {
+  .chip--#{$status} {
+    $color: $bgcolor;
+    background: $color;
+    color: checkColorValue($color)
+  }
+}

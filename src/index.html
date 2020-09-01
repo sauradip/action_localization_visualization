@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temporal Action Localization</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg">
+
+
+  <div class="player-div">
+    <span><img src="../pic/logo2.png" style="height:70px;margin-top:3px;"></span>
+    <div
+      style="margin-top:0px;padding-top:0px;padding-left:20px;padding-right:20px;left:50%;padding-bottom:5px;display: table">
+      <div style="display:table-cell;">
+        <label style="padding-left:3%;padding-right:30px">Select Video</label>
+        <input style="width:15%" type="file" name="myVideo" id="myVideo">
+        <label style="padding-right:30px">Predicted File</label>
+        <input style="width:15%" type="file" name="myPred" id="myPred">
+        <label style="padding-right:20px">GT Annotation File</label>
+        <input style="width:15%" type="file" name="myInput" id="myInput"> 
+        <label style="padding-right:20px">Choose Method</label>
+        <!-- <input  type="file" name="myPred" id="myPred"> -->
+        <select style="width:10%;height:20px;" name="cars" id="cars">
+          <option value="wsup">Weakly Supervised</option>
+          <option value="sup">Supervised</option>
+        </select>
+      </div>
+      <br>
+      <br>
+
+      <div class="bPlayer" style="top:15%;height:80%;width:60%;left:20%;">
+
+        <video class="video" autoplay loop poster="../pic/video_poster.png">
+          <source id="vid_link"
+            src="../video/video_test_0001162.mp4">
+        </video>
+        <input type="range" class="progressRng" min="1" max="100" value="0" step="0.1"></input>
+        <span class="current">00:00</span>
+        <span class="duration">00:00</span>
+        <div class="ctrlArea">
+          <button class="playBtn" id="playBtn">▶</button>
+          <!-- <button data-skip="-10" class="fastBkrd"><<</button>
+      <button data-skip="20" class="fastFwrd">>></button>
+      <input type="range" class="volume" min="0" max="1" step="0.05" value="1">
+      <input type="range" class="speed" min="0" max="2" step="0.1" value="1"> -->
+          <!-- <button class="fullScreen">⛶</button> -->
+        </div>
+
+      </div>
+    </div>
+    <div class="range-div">
+      <div class="range-gauge" style="padding-top:0px;padding-bottom:50px;height:30%">
+
+        <!-- GT -->
+        <div style="padding-left:130px;">
+          <h4>Ground Truth</h4>
+        </div>
+        <div class="range-bar">
+
+          <div class="gt-bar"></div>
+          <!-- <div class="bar" style="left:10%;width:50%;background-color: red"></div> -->
+        </div>
+
+        <!-- separator  -->
+
+        <div class="range-bar">
+          <div class="space-bar"></div>
+        </div>
+        <!-- <div class="range-bar" style="width:84%;left:8%;">
+      <div class="bar" style="left:0%;width:100%;background-color:white"></div>
+    </div> -->
+
+        <!-- Predicted -->
+        <div style="padding-left:150px;">
+          <h4>Predicted</h4>
+        </div>
+        <div class="range-bar">
+          <div class="pred-bar"></div>
+          <!-- <div class="bar" style="left:10%;width:50%;background-color: red"></div> -->
+        </div>
+        <div class="range-bar">
+          <div class="space-bar"></div>
+        </div>
+
+
+
+      </div>
+    </div>
+    <div class="chips-div" style="height:30%">
+      <span style="padding-left:110px;padding-right:30px;font-weight: bold;">Class List</span>
+      <span class="chip chip--primary" style="width:auto;height:auto;text-align: center;">Class</span>
+      <span class="chip chip--alternative" style="width:auto;height:auto;text-align: center;">Tags</span>
+      <span class="chip chip--alert" style="width:auto;height:auto;text-align: center;">Here</span>
+      <!-- <div class="chip chip--secondary" style="width:6%;height:14%;text-align: center;">Secondary</div>
+    <div class="chip chip--alternative" style="width:6%;height:14%;text-align: center;">Alternative</div>
+    <div class="chip chip--alert" style="width:6%;height:14%;text-align: center;">Alert</div>
+    <div class="chip chip--danger" style="width:6%;height:14%;text-align: center;">Danger</div>
+    <div class="chip chip--warning" style="width:6%;height:14%;text-align: center;">Warning</div>
+    <div class="chip chip--success" style="width:6%;height:14%;text-align: center;">Success</div> -->
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+    <!-- for Range Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="../range/dist/style.css">
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <link rel="stylesheet" href="../sassy-chips/dist/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!-- <script src="color_script.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+2.6 3.6 CricketBowling
+3.4 4.4 CricketShot
+82.1 83.9 CricketBowling
+83.6 85.5 CricketShot
+90.5 91.6 CricketBowling
+91.7 92.8 CricketShot
+99.6 101.3 CricketBowling
+102.1 102.9 CricketShot
+109.4 111.2 CricketBowling
+111.4 114.2 CricketShot

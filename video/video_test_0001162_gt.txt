@@ -1,0 +1,9 @@
+42.7 64.8 PoleVault
+65.7 69.4 PoleVault
+70.6 77.5 PoleVault
+79.3 82.5 PoleVault
+83.5 87.4 PoleVault
+89.4 93.8 PoleVault
+95.1 99.3 PoleVault
+99.7 101.7 PoleVault
+102.5 105.4 PoleVault

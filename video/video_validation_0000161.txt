@@ -1,0 +1,8 @@
+11.3 14.1 CliffDiving
+11.3 14.1 Diving
+21.0 23.9 CliffDiving
+21.0 23.9 Diving
+26.4 29.4 CliffDiving
+26.4 29.4 Diving
+50.9 55.4 CliffDiving
+50.9 55.4 Diving

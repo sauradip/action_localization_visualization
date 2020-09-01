@@ -1,0 +1,121 @@
+html {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+.range-gauge {
+  padding: 0px 20px;
+}
+.range-bar {
+  height: 20px;
+  background: #ddd;
+  position: relative;
+}
+.range-bar .bar {
+  background: blue;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.7;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.range-bar .bar .labels {
+  table-layout: fixed;
+  margin-top: 10px;
+  width: 100%;
+  display: table;
+  font-size: 70%;
+}
+.range-bar .bar .labels > span {
+  display: table-cell;
+  text-align: center;
+  line-height: 100%;
+  padding: 3px;
+}
+.range-bar .bar .labels > span:first-child {
+  text-align: left;
+}
+.range-bar .bar .labels > span:last-child {
+  text-align: right;
+}
+.range-bar .bar:hover {
+  opacity: 1;
+}
+.range-bar .gauge-bubble {
+  width: 100px;
+  margin-left: -50px;
+  position: absolute;
+  text-align: center;
+  bottom: 100%;
+  padding: 6px 0;
+}
+.range-bar .gauge-bubble .lbl {
+  padding: 5px;
+  border-radius: 5px;
+  line-height: 100%;
+  text-align: center;
+  display: inline-block;
+  background: blue;
+  color: white;
+}
+.range-bar .gauge-bubble .lbl small {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+.range-bar .gauge-bubble .lbl:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -8px;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 8px 0 8px;
+  border-color: blue transparent transparent transparent;
+}
+
+.space-bar {
+  left:0%;
+  width:100%;
+  background-color:white;
+}
+
+.gt-bar {
+  left:0%;
+  width:100%;
+  background-color:white;
+  border-style: ridge;
+}
+.gt-bar :-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5px;
+  height: 22px;
+  background: black;
+  cursor: pointer;
+}
+
+.pred-bar {
+  left:0%;
+  width:100%;
+  background-color:white;
+  border-style: ridge;
+}
+
+.range-bar {
+  width:62%;
+  left:19%;
+}
+
+.player-div {
+  height:15%;
+}
+
+.range-div {
+  padding-top:496px;
+  padding-bottom:50px;
+  height:90%;
+}
