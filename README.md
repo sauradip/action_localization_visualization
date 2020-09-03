@@ -13,6 +13,7 @@ Features include:
 3) Can visualize both Supervised and Weakly Supervised Model Output
 4) Includes code to convert output of two standard codes in Temporal Action Localization into visualizable format.
 
+### Overall Flow
 
 TALVT helps facilitate an end-to-end machine learning pipeline:
 
