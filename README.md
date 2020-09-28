@@ -20,3 +20,9 @@ TALVT helps facilitate an end-to-end machine learning pipeline:
 <p align="center">
   <img src="https://github.com/sauradip/action_localization_visualization/blob/master/pic/flow.png">
 </p>
+
+### Web Application Preview
+
+<p align="center">
+  <img src="https://github.com/sauradip/action_localization_visualization/blob/master/pic/Code_sc.png">
+</p>
