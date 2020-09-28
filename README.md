@@ -23,6 +23,8 @@ TALVT helps facilitate an end-to-end machine learning pipeline:
 
 ### Web Application Preview
 
+TALVT web-application preview. The simplest tool to visualize temporal action localization code snippet available on GitHub for the <strong>First</strong> time
+
 <p align="center">
   <img src="https://github.com/sauradip/action_localization_visualization/blob/master/pic/Code_sc.png">
 </p>
